@@ -34,7 +34,7 @@ public class Function {
 
         // Using a custom Java function
         stat.execute("CREATE ALIAS if not exists SASREAD "
-                + "FOR \"com.witwall.h2.Function.sasRead\" ");
+                + "FOR \"com.alitrack.h2.Function.sasRead\" ");
 
         String path = "/Users/steven/Downloads/upin2npixw.sas7bdat";
         stat.execute("create table sas as SELECT * FROM SASREAD('" + path + "', 'UTF-8') ");
